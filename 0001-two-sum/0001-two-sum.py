@@ -1,9 +1,9 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         map = {};
-        for i, n in enumerate(nums):
-            possible = target - n
+        for i, element in enumerate(nums):
+            possible = target - element
             if possible not in map:
-                map[n] = i;
+                map[element] = i;
             else:
                 return [map[possible], i];
